@@ -1,5 +1,3 @@
-
-
 using aspnet_react.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -12,8 +10,7 @@ namespace aspnet_react.Data
         {
             
         }
-
-        public DbSet<Product> Products { get; set;}
+         public DbSet<Product> Products { get; set;}
         public DbSet<Category> Categories { get; set; }
     }
 }
