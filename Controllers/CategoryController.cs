@@ -80,6 +80,14 @@ namespace aspnet_react.Controllers
         [HttpPost]
         public async Task<ActionResult<Category>> PostCategory(Category category)
         {
+            // var categoryExistent = await _context.Categories
+            // .Where(item => item.Title == category.Title).FirstAsync();
+
+            // if (categoryExistent.Id != 0) {
+            //     Console.WriteLine("Categoria já existe");
+            //     return BadRequest();
+            // };
+
             _context.Categories.Add(category);
             await _context.SaveChangesAsync();
 

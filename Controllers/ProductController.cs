@@ -48,7 +48,7 @@ namespace aspnet_react.Controllers
             var Product = await _context.Products
             .Include(item => item.Category)
             .AsNoTracking()
-            .FirstOrDefaultAsync(item => item.CategoryId == id);
+            .FirstOrDefaultAsync(item => item.Id == id);
 
             if (Product == null)
             {
